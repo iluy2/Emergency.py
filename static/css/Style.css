@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;600;800&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Unbounded', cursive;
+    font-size: 2.5vh;
+    border: none;
+    border-radius: 1vh;
+}
+
+body
+{
+    background-color: #F9F7F2;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    padding: 3vh;
+    background-color: #44000A;
+    border-radius: 0;
+}
+
+header a
+{
+    color: #F9F7F2;
+    background-color: #DD2255;
+    padding: 1vh 3vh;
+
+    transition: all 0.5s;
+}
+
+header a:hover
+{
+    color: #FCCA6F;
+    background-color: #FD5D5B;
+    transform: scale(1.2);
+
+    transition: all 0.5s;
+}
+
+.content
+{
+    width: 90%;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content h1
+{
+    font-size: 5vh;
+    width: 100%;
+    margin: 3vh;
+    color: #DD2255;
+}
+
+.form-block
+{
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-block input,
+.form-block textarea
+{
+    margin: 1vh;
+    padding: 2vh 3vh;
+    border-radius: 1vh;
+    background-color: #FCCA6F;
+    color: #44000A;
+    font-size: 2vh;
+}
+
+.form-block input[type="submit"],
+.form-block input[type="button"]
+{
+    margin: 3vh;
+}
+
+.form-block textarea
+{
+    width: 100%;
+}
+
+.areas
+{
+
+}
+
+.areas text
+{
+    color: #F9F7F2;
+    padding: 2vh;
+}
+
+.areas select
+{
+    background-color: #FD5D5B;
+    color: #F9F7F2;
+    padding: 1vh;
+}
+
+.areas option
+{
+
+}
+
+th
+{
+    background-color: #FD5D5B;
+    color: #F9F7F2;
+    padding: 1vh;
+}
+
+td
+{
+    font-size: 2vh;
+    padding: 2vh;
+    background-color: #FCCA6F;
+    color: #44000A;
+}
+
+.reports
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+}
+
+.report
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCCA6F;
+    padding: 1.5vh;
+    margin: 1vh;
+    width: 26vw;
+}
+
+.report h2
+{
+    margin: 1vh;
+}
+
+.report p
+{
+    font-size: 1.5vh;
+}
+
+.report a
+{
+    padding: 1vh;
+    background-color: #44000A;
+    color: #F9F7F2;
+}
+
+.report-buttons
+{
+    margin: 4vh 0vh 2vh;
+}
+
+.report b
+{
+    font-size: 1.5vh;
+}

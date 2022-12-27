@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/static/css/Style.css" rel="stylesheet">
+    <title>Регистрация</title>
+</head>
+<body>
+    <header>
+        <a href="/feed">Актуальная лента</a>
+        <a href="/cabinet">Личный кабинет</a>
+        {% if user.can_report_check %}
+            <a href="/report-check">Проверка</a>
+        {% endif %}
+        {% if user.can_report %}
+            <a href="/report">Доложить</a>
+        {% endif %}
+    </header>
+
+    <div class="content">
+        <h1>Актуальная лента</h1>
+        <div class="reports">
+            {% for report in user.get_checked_reports() %}
+                <div class="report">
+                    <h2>{{ report[0] }}</h2>
+                    <p><b>Место: </b>{{ report[2] }}</p>
+                    <p><b>Описание: </b>{{ report[1] }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

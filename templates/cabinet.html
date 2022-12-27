@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/static/css/Style.css" rel="stylesheet">
+    <title>Регистрация</title>
+</head>
+<body>
+    <header>
+        <a href="/feed">Актуальная лента</a>
+        <a href="/cabinet">Личный кабинет</a>
+        {% if user.can_report_check %}
+            <a href="/report-check">Проверка</a>
+        {% endif %}
+        {% if user.can_report %}
+            <a href="/report">Доложить</a>
+        {% endif %}
+    </header>
+
+    <div class="content">
+        <h1>Личный кабинет</h1>
+        <form class="form-block" action="/cabinet" method="post">
+            <input type="text" placeholder="Имя" name="name">
+            <input type="text" placeholder="Фамилия" name="lastname">
+            <input type="text" placeholder="Отчество" name="patronymic">
+            <input type="tel" placeholder="Телефон" name="phone">
+            <input type="text" placeholder="Никнейм" name="login">
+            <input type="submit" value="Сохранить">
+        </form>
+    </div>
+</body>
+</html>
